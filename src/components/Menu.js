@@ -6,20 +6,14 @@ import {
   Link
 } from "react-router-dom";
 
-export default function App() {
+export default function Menu() {
   return (
     <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">HOME</Link>
-            </li>
-            <li>
-              <Link to="/account">ACCOUNT</Link>
-            </li>
-          </ul>
-        </nav>
+      <div className="topnav">
+         <Link to="/">HOME</Link>
+         <Link to="/account">ACCOUNT</Link>
+      </div>
+    
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
@@ -31,7 +25,6 @@ export default function App() {
             <Home />
           </Route>
         </Switch>
-      </div>
     </Router>
   );
 }
