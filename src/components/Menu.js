@@ -19,20 +19,20 @@ export default function Menu() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/account">
-            <Account />
+            {/* <Account /> */}
           </Route>
           <Route path="/">
-            <Home />
+            {/* <Home /> */}
           </Route>
         </Switch>
     </Router>
   );
 }
 
-function Home() {
-  return <h2>HOME</h2>;
-}
+// function Home() {
+//   return <h2>HOME</h2>;
+// }
 
-function Account() {
-  return <h2>ACCOUNT</h2>;
-}
+// function Account() {
+//   return <h2>ACCOUNT</h2>;
+// }
